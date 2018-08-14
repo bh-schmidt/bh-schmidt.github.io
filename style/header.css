@@ -1,0 +1,75 @@
+.page-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.6);
+    max-height: 100%;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.div-header-buttons {
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+}
+
+.btn-header {
+    color: #ffffff;
+    background-color: #053b2b;
+    border-color: #ffffff49;
+}
+
+.btn-header:hover {
+    transition-duration: 0.5s;
+    background-color: #032018;
+    border-color: #ffffff;
+}
+
+.btn-header:focus {
+    transition-duration: 0s;
+    background-color: #02140f;
+    border-color: #ffffff;
+}
+
+.btn-header.btn-pressed {
+    transition-duration: 0.5s;
+    background-color: #032018;
+    border-color: #ffffff;
+}
+
+.btn-arrow{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 1));
+    color: #00FF4C;
+    width: 70px;
+}
+
+.btn-arrow:hover{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.900), rgba(0, 0, 0, 1));
+}
+@media (min-width: 950px) {
+    .btn-show-menu {
+        display: none;
+    }
+    .page-header .btn-header {
+        display: inline-block;
+        transition: 0s;
+        width: 120px;
+    }
+}
+
+@media (max-width: 949px) {
+    .div-header-buttons {
+        display: none;
+    }
+    .show-div-header-buttons-responsive {
+        display: block;
+        width: 300px;
+    }
+    .show-div-header-buttons-responsive .btn-header {
+        transition: none;
+        width: 90%;
+    }
+}

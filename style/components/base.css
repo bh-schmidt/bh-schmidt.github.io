@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
+}
+
+html, body {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.div-container {
+    max-width: 90%;
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+}
